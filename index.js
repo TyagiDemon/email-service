@@ -35,7 +35,7 @@ server.on("listening", () => {
 
 	registerService();
 
-	const interval = setInterval(registerService, 20000);
+	const interval = setInterval(registerService, 240000);
 	const cleanup = async () => {
 		clearInterval(interval);
 		await unregisterService();
